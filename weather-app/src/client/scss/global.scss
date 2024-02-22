@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "~bootstrap/scss/mixins/breakpoints";
+
+// fonts
+$base-font: "Rubik", sans-serif;
+$font-small: 400;
+$font-medium: 500;
+$font-large: 600;
+$font-bold: bold;
+
+// colors
+$base-white: #FFF;
+$base-black: #000;
+$dark-black: #0C0C0C;
+$secondary-black: #5F5F5F;
+
+// breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
