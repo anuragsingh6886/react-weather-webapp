@@ -2,19 +2,22 @@
 @import '../scss/global.scss';
 
 // component style
-* {font-family: $base-font;}
+* {
+  font-family: $base-font;
+  color: #0c3558;
+}
 
 .main-app {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 75vh;
+    height: 85vh;
     align-items: center;
 
     &::before {
         content: '';
-        background: url('../../assetes/sunset.jpg') no-repeat center center/cover;
+        background: url('../../assetes/background.jpg') no-repeat center center/cover;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -23,6 +26,14 @@
         z-index: -1;
         filter: blur(2px);
         -webkit-filter: blur(2px);
+    }
+
+    p {
+      color: black;
+    }
+
+    .feature-list {
+      margin-left: 2rem;
     }
 
     .home-page {
@@ -50,8 +61,8 @@
     }
 }
 
-$primary: #007bff; // Customize primary color
-$secondary: #6c757d; // Customize secondary color
+$primary: #007bff;
+$secondary: #6c757d;
 
 #not-found {
   padding: 5rem 0;
